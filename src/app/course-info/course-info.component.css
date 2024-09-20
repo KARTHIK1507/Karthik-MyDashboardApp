@@ -1,0 +1,46 @@
+.course-info {
+    background-color: #ffffff;
+    border-radius: 8px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #bbb;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .course-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .course-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .course-info p strong {
+    color: #333;
+  }
+
+  .badge-outcomes {
+    background-color: #22c14a;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 12px;
+  }
+
+  .badge-mappedPo{
+    background-color: #250a86;
+    color: #f3f3f3;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 12px;
+  }
+
+  .grid-outcomes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }

@@ -1,0 +1,51 @@
+/* General layout and alignment */
+.container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns:auto auto;
+    gap: 20px;
+    padding: 20px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+  
+  /* Styling for each component box */
+  .container > div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling for components */
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Specific styling for course info details */
+  .course-info p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* Style for bar and line charts */
+  canvas {
+    width: 100% !important;
+    max-height: 300px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    canvas {
+      max-height: 250px;
+    }
+  }
+  

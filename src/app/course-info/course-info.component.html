@@ -1,0 +1,26 @@
+<div class="course-info">
+  <h3>Course Information</h3>
+  <p><strong>Course Code</strong></p>
+  <p> {{ course.code }}</p>
+  <hr>
+  <p><strong>Course Name</strong></p>
+  <p>{{ course.name }}</p>
+  <hr>
+  <p><strong>Course Type</strong></p>
+  <p>{{ course.type }}</p>
+  <hr>
+  <p><strong>Course Period</strong></p>
+  <p>{{ course.period }}</p>
+  <hr>
+  <p><strong>Credits ({{course.credits.total}})</strong></p>
+  <p>Lecture - {{ course.credits.lecture }}</p>
+  <p>Tutorial - {{ course.credits.tutorial }}</p>
+  <p>Practical - {{ course.credits.practical }}</p>
+  <p>Project - {{ course.credits.project }}</p>
+  <hr>
+  <p><strong>Course Outcomes (COs)</strong></p>
+  <p class="grid-outcomes"><span *ngFor="let outcome of course.outcomes" class="badge-outcomes">{{ outcome }}</span></p>
+  <hr>
+  <p><strong>Mapped to this Course</strong></p>
+  <p><span *ngFor="let po of course.mappedPO" class="badge-mappedPo ">{{ po }}</span></p>
+</div>
